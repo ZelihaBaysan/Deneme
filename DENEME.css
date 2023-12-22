@@ -22,6 +22,13 @@ html {
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
 }
+html ::-webkit-scrollbar{
+  width: 0.8rem;
+  background-color: white;
+}
+html ::-webkit-scrollbar-thumb{
+  background-color: #000000;
+}
 body {
   background-color: var(--main-color);
 }
@@ -36,6 +43,9 @@ section {
   font-size: 1.7rem;
   color: white;
   background-color: var(--black-color);
+}
+.btn:hover{
+  opacity: 0.6;
 }
 .heading{
   color: white;
