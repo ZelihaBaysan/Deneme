@@ -110,7 +110,8 @@ section {
 /* Home section styles */
 .home {
   min-height: 100vh;
-  background: url("C:/Users/zelha/Desktop/web/htmlcssfalan/pizza/pic/home.jpg") no-repeat;
+  background: url("C:/Users/zelha/Desktop/web/htmlcssfalan/pizza/pic/home.jpg")
+    no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: -14.5rem;
@@ -245,3 +246,85 @@ section {
   font-size: 1.6rem;
   color: var(--main-color);
 }
+
+/*about start*/
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+}
+.about .row .content h3 {
+  font-family: sans-serif;
+  font-size: 5rem;
+  color: white;
+  padding: 1rem;
+}
+.about .row .content p {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: var(--black-color);
+  padding: 1rem;
+}
+.about .row .content .btn {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+}
+.about .row .content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*review start*/
+
+.review .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+
+}
+.review .box-container .box{
+  text-align: center;
+  background-color: white;
+  position: relative;
+  border-radius: 3rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.review .box-container .box .image{
+
+ 
+
+}
+
+}
+.review .box-container .box .review{
+
+}
+.review .box-container .box .avatar{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review .box-container .box .avatar img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.review .box-container .box .avatar-name{
+
+}
+.review .box-container .box .avatar-name 
