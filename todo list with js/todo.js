@@ -11,6 +11,7 @@ const alertSuccess = document.querySelector(".alert-success");
 //events
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
+todoFilter.addEventListener("click", filterTodo);
 
 
 //functions
@@ -69,17 +70,45 @@ function addTodo(e) {
 
 }
 
-function deleteCheck(e){
+function deleteCheck(e) {
     const item = e.target;
 
     //delete todo
-    if(item.classList[0]=== "trash-btn"){
+    if (item.classList[0] === "trash-btn") {
         const todo = item.parentElement;
         todo.remove();
     }
-    else{
-        
+
+    //check mark
+    if (item.classList[0] === "complete-btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
     }
+}
+
+function filterTodo(e) {
+    const todos = todoList.childNodes;
+    todos.forEach(function (item) {
+        switch (e.target.value) {
+            case "all":
+                item.style.display = "flex";
+                break;
+            case "completed":
+                if (item.classList.contains("completed")) {
+                    item.style.display = "flex";
+                } else {
+                    item.style.display = "none";
+                }
+                break;
+            case "uncompleted":
+                if (!item.classList.contains("completed")) {
+                    item.style.display = "flex";
+                } else {
+                    item.style.display = "none";
+                }
+                break;
+        }
+    })
 }
 
 
