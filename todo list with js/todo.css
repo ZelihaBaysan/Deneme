@@ -108,6 +108,7 @@ select {
   justify-content: center;
   align-items: center;
   transition: 0.5s all ease;
+  width: 25rem;
 }
 
 .todo li {
