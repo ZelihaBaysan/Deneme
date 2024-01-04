@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+* {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #f3f3f3;
+  max-height: 100vh;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  border-radius: 4px;
+}
+
+p {
+  margin: 0;
+  color: #0766ad;
+  font-weight: bold;
+}
+
+p i {
+  color: #c5e898;
+  margin-right: 0.25rem;
+  font-size: 1.25rem;
+}
+
+p > span {
+  color: black;
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+button {
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+button.danger {
+  background-color: #b80000;
+}
+
+button.primary {
+  background-color: #3887be;
+}
+
+button.success {
+  background-color: #5f8670;
+}
+
+button.warning {
+  background-color: #ff9800;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ff8080;
+  width: 500px;
+  min-height: 500px;
+  margin: 4rem auto;
+  border-radius: 30px;
+}
+
+.container form {
+  width: 400px;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.container form input {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.container .user {
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+.container .user .user-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.container .user input {
+  margin-top: 0.5rem;
+  height: 30px;
+}

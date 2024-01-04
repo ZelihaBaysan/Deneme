@@ -1,9 +1,50 @@
 <html>
-    <head>
-<title>Local Storage</title>
-<link rel="stylesheet" href="ls.css">
-    </head>
-    <body>
-        <script src="ls.js"></script>
-    </body>
+  <head>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="ls.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LOCAL STORAGE</h1>
+      <form id="form">
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="add new user"
+          id="name"
+        />
+        <button class="success">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+      <div class="user" id="nameList">
+        <div class="user-item">
+          <p>
+            <i class="fas fa-user"></i>
+            <span>User :</span> isim
+          </p>
+          <div class="buttons">
+            <button class="primary" onclick="Edit()">
+              <i class="fas fa-edit"></i>
+              Edit
+            </button>
+            <button class="danger" onclick="Delete()">
+              <i class="fas fa-trash"></i>
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="ls.js"></script>
+  </body>
 </html>
