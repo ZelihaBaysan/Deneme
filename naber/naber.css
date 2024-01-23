@@ -1,0 +1,52 @@
+:root {
+  --main-color: rgb(172, 115, 219);
+  --background-color: rgb(47, 112, 14);
+  --font-color: rgb(206, 197, 180);
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--background-color);
+  font-family: sans-serif;
+}
+
+.navigation {
+  margin: auto;
+  background-color: var(--main-color);
+  width: 50rem;
+  height: 5rem;
+  border-radius: 10rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.counter {
+  margin: 3rem auto 0 auto;
+  width: 10rem;
+  border-radius: 10rem;
+  background-color: var(--main-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.counter p {
+  border-radius: 10rem;
+  background-color: white;
+  width: 3rem;
+  margin: auto;
+}
+.button {
+  margin: 3rem auto 0 auto;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+.button .strt-btn {
+  background-color: var(--main-color);
+  font-size: 4rem;
+  border-style: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
